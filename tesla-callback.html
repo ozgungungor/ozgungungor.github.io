@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tesla Takip</title>
+<script>
+  var target = "teslatakip://auth/callback" + window.location.search;
+  window.location.replace(target);
+</script>
+</head>
+<body style="font-family: -apple-system, system-ui, sans-serif; padding: 2rem;">
+<p>Uygulamaya yönlendiriliyorsunuz…</p>
+<p><a id="back" href="#">Otomatik açılmazsa buraya dokunun</a></p>
+<script>document.getElementById("back").href = target;</script>
+</body>
+</html>
